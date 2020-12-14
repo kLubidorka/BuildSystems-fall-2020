@@ -33,3 +33,31 @@
   * [State](/State/cpp-source)
   * [Memento](/Memento/cpp-source)
   * [Visitor](/Visitor/cpp-source)
+
+## Инструкция по установке  
+
+0) Устанавливаем компилятор С++. Например gcc: brew install gcc
+
+1) Скачиваем подмодули
+git submodule update --init --recursive
+
+2) Устанавливаем boost  
+полное руководство https://www.boost.org/users/download/  
+cd boost  
+./bootstrap.sh --prefix=/usr/local/Cellar/boost  
+./b2  
+
+3) Устанавливаем openssl
+полное руководство по установке openssl:  
+https://github.com/openssl/openssl/blob/52c6c12c1cad6f1046b34f4139d1aa3e967a5530/INSTALL.md
+cd openssl  
+./Configure --prefix=/usr/local/Cellar/openssl  
+make  
+make install  
+
+4) Устанавливаем Curl  
+Полное руководство https://curl.se/docs/install.html  
+cd curl
+./buildconf  
+./configure  
+make  
