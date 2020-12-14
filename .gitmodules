@@ -1,0 +1,3 @@
+[submodule "HOR/PatternsCollection-master/boost"]
+	path = HOR/PatternsCollection-master/boost
+	url = https://github.com/boostorg/boost
